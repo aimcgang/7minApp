@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>7 Minute Screen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+    
+      
+      
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/docs/assets/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+      
+      <!--<link href="js/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+      <script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+      <style type="text/css">
+          .solution{ display: none;}
+      </style>
+      
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Modal Example</h2>
+      <!-- Trigger the modal with a button -->
+      <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+      <!-- Modal --><!--
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content--><!--
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>-->
+        
+      <a data-toggle="modal" data-target="#myModal1" class="popphoto"><img style="width:50%" src="image/pk_0002.jpg"></a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" role="dialog">          
+        <div class="modal-dialog modal-lg">            
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close btnClose" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div class="thumbnail">
+                    <img class="popphoto" src="image/pk_0002.jpg">
+                </div>                          
+               <h4 class="solution">กล้วย</h4> 
+              <button type="button" class="btn btn-success btnSolution">Solution</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+    </div>
+      
+      
+      
+    <!--<a href="#popupPic1" data-rel="popup" data-position-to="window" data-transition="fade">
+        <img class="popphoto" alt="Q1,P1" style="width:30%" src="image/pk_0002.jpg">
+    </a> 
+    <div data-role="popup" id="popupPic1" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <p>test</p>
+        <img class="popphoto" src="image/pk_0002.jpg" style="max-height:512px;" alt="Q!,P1">
+        <br>
+        <button type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b" id="btnSolution">SOLUTION</button> 
+        <p class="ui-inline" id="solution">กล้วย</p>
+    </div>-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/docs/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script>
+        $(function() {
+            $(".btnSolution").click(function(){ 
+                $(".btnSolution").hide("slow");
+                $(".solution").show("slow");        
+            });                   
+        });
+        
+        $(".modal").on('hidden.bs.modal', function(){
+            $(".solution").hide();
+            $(".btnSolution").show();
+        });
+
+      </script>
+  </body>
+</html>

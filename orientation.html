@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>7 Minute Screen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/docs/assets/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+        .form-group{ margin-bottom:0px !important;}
+        .form-control-feedback{top:0px !important;}
+    </style>
+      
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+        <header>
+            <h1>Orientation Test</h1>
+        </header>
+        <section>
+            
+            <form method="POST" name="form2" id="myform2" class="form" action="">                
+<!----Q1--------------------------------------------------------------->   
+                <div class="col-sm-6">
+                    <label for="InputOQ1">เดือนนี้เป็นเดือนอะไร</label> 
+                    <div class="form-group has-feedback">                     
+                        <select name="sltOQ1" id="InputOQ1" class="form-control css-require">
+                            <option value="0">เดือน</option>
+                            <option value="1">มกราคม</option>
+                            <option value="2">กุมภาพันธ์</option>
+                            <option value="3">มีนาคม</option>
+                            <option value="4">เมษายน</option>
+                            <option value="5">พฤษภาคม</option>
+                            <option value="6">มิถุนายน</option>
+                            <option value="7">กรกฎาคม</option>
+                            <option value="8">สิงหาคม</option>
+                            <option value="9">กันยายน</option>
+                            <option value="10">ตุลาคม</option>
+                            <option value="11">พฤษจิกายน</option>
+                            <option value="12">ธันวาคม</option>
+                        </select>   
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="check1"> ตอบไม่ได้</label>
+                        </div>                        
+                       
+                    </div>
+                </div>
+                
+<!----Q2--------------------------------------------------------------->
+                <div class="col-sm-6">
+                    <label for="InputOQ2" class="control-label">วันนี้เป็นวันที่เท่าไหร่</label>
+                    <div class="form-group has-feedback">                        
+                            <input type="text" class="form-control css-require" id="InputOQ2" placeholder="วันที่">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check2"> ตอบไม่ได้</label>                          
+                            </div>  
+                                           
+                    </div>                       
+                </div>
+                
+<!----Q3------------------------------------------------------------------>
+                <div class="col-sm-6">
+                    <label for="InputOQ3" class="control-label">นี้เป็นปีพ.ศ.อะไร</label>
+                    <div class="form-group has-feedback">                        
+                            <input type="text" class="form-control css-require" id="InputOQ3" placeholder="พ.ศ.">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check3"> ตอบไม่ได้</label>                          
+                            </div>  
+                                           
+                    </div>                       
+                </div>                   
+<!----Q4--------------------------------------------------------------->
+                <div class="col-sm-6">
+                    <label for="InputOQ4">วันนี้เป็นวันอะไรของสัปดาห์</label>
+                    <div class="form-group has-feedback">   
+                            <select name="sltOQ4" id="InputOQ4" class="form-control">
+                                <option value="0">วัน</option>
+                                <option value="1">จันทร์</option>
+                                <option value="2">อังคาร</option>
+                                <option value="3">พุธ</option>
+                                <option value="4">พฤหัสบดี</option>
+                                <option value="5">ศุกร์</option>
+                                <option value="6">เสาร์</option>
+                                <option value="7">อาทิตย์</option>
+                            </select>                             
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check4"> ตอบไม่ได้</label>                          
+                            </div>  
+                                           
+                    </div>                       
+                </div>  
+<!----Q5--------------------------------------------------------------->
+                <div class="col-sm-6">
+                    <label for="InputOQ5" class="control-label">ขณะนี้เป็นเวลาเท่าไหร่ (ห้ามให้ผู้ทดสอบดูนาฬิกา)</label>
+                    <div class="form-group has-feedback"> 
+                        <input type="text" class="form-control css-require" id="InputOQ5" placeholder="ชั่วโมง:นาที">
+                        <!--<input type="text" class="form-control" id="InputOQ52" placeholder="นาที">-->
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="check5"> ตอบไม่ได้</label>                          
+                        </div>  
+                    </div>                       
+                </div>  
+                
+
+<!----Submit--------------------------------------------------------------->
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-primary" name="Submit" value="Submit" />
+                    <a class="btn btn-default" href="recallmemoryIndex.html" role="button">skip</a>
+                </div>
+            </form>
+        </section>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/docs/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+      
+      <script type="text/javascript" src="orientation.js"></script>   
+      
+  </body>
+</html>
